@@ -2,36 +2,87 @@ html {
   height: 100%;
   width: 100%;
   font-family: "Titillium Web", sans-serif;
+  background: url(https://images.unsplash.com/photo-1581677641984-cf14ca58c5ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);
+  background-size: cover;
+  /* overflow: hidden; */
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
 }
 
 button {
   font-size: 7px;
 }
 
-#main-content {
+#create-task-form {
+  width: 60%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: auto;
+  padding: 1rem;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(rgb(255, 50, 50), rgb(19, 230, 19));
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
 
+#new-task-description {
+  margin: 2rem;
+  height: 1rem;
+  text-align: center;
+}
+
+#main-content {
+  max-width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  flex-direction: column;
+  border: 1px solid #333;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px 20px 18px 18px;
+  opacity: 90%;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px #333;
+  margin: auto;
+}
+
 #list {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   margin: 10px;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(rgb(255, 50, 50), rgb(19, 230, 19));
   padding: 15px 20px 18px 18px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 2px 5px 5px #333;
+}
+
+#submit {
+  padding: 20px;
+  margin: 20px;
+  background: rgb(19, 230, 19);
+}
+
+.submitbutton {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  html {
+    background: url(https://images.unsplash.com/photo-1581677641984-cf14ca58c5ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);
+  }
 }
